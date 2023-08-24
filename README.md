@@ -1,3 +1,7 @@
+# Rabbits world
+
+![local image](./images/rabbitsWorld.png)
+
 This application utilizes various technologies, including Vite for fast development, React for building user interfaces, and Bootstrap for styling and layout.
 
 # main.tsx
