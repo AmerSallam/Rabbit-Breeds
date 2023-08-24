@@ -1,0 +1,14 @@
+.rabbit-images {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping if the content overflows */
+    justify-content: flex-start; /* Adjust as needed */
+  }
+  
+  .rabbit-image-container {
+    margin: 10px; /* Adjust spacing between images */
+  }
+  
+  .rabbit-figure {
+    text-align: center; /* Center-align the content */
+  }
+  

@@ -1,43 +1,40 @@
 // import "bootstrap/dist/css/bootstrap.css";
+import RabbitImageComponent from "./components/RabbitImageComponent.tsx"; // Import the component
 
-const books = [
-  "The Nightingale by Kristin Hannah",
-  "One Hundred Years of Solitude by Gabriel García Márquez",
-  "The Kite Runner by Khaled Hosseini",
-  "The Handmaid's Tale by Margaret Atwood",
-  "A Song of Ice and Fire series (starting with A Game of Thrones) by George R.R. Martin",
-];
-
-const headingReadingList = "Reading list";
-
-const summerTravelDestinations = [
-  "Santorini, Greece",
-  "Maui, Hawaii, USA",
-  "Barcelona, Spain",
-  "Bali, Indonesia",
-  "Queenstown, New Zealand",
-];
-
-const headingPlaces = "Recommended places to visit";
-import ListGroup from "./ListGroup.tsx";
-import Rabbit from "./button.tsx";
-import Links from "./links.tsx";
+import ListGroup from "./components/ListGroup.tsx";
+import Rabbit from "./components/button.tsx";
+import Links from "./components/links.tsx";
 
 function App() {
+  const rabbitBreeds = [
+    "Dutch Rabbit",
+    "Lop Rabbit",
+    "Netherland Dwarf",
+    "Flemish Giant",
+    "Rex Rabbit",
+    "Angora Rabbit",
+    "Himalayan Rabbit",
+    "Lionhead Rabbit",
+    "Jersey Wooly",
+    "Havana Rabbit",
+    "American Fuzzy Lop",
+    "New Zealand Rabbit",
+  ];
+
+  const headingRabbitBreeds = "Rabbit Breeds";
   return (
     <>
       <div>
-        <ListGroup items={books} heading={headingReadingList} />
+        <ListGroup items={rabbitBreeds} heading={headingRabbitBreeds} />
       </div>
-      <div>
-        <ListGroup items={summerTravelDestinations} heading={headingPlaces} />
-      </div>
+
       <div>
         <Rabbit />
       </div>
       <div>
         <Links />
       </div>
+      
     </>
   );
 }
