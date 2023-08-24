@@ -17,9 +17,7 @@ function Links({rabbitBreeds}:Props) {
           {Object.keys(rabbitBreeds).map((breed) => (
             <li
               key={breed}
-              className={
-                breed === selectedBreed ? " active" : "list-group-item"
-              }
+              className={selectedBreed === breed ? " btn-success" : "list-group-item"}
               onClick={() => setSelectedBreed(breed)}
               // onClick={() => console.log(breed)}
               style={{ color: "blue", cursor: "pointer" }}
