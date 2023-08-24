@@ -14,7 +14,7 @@ function ListGroup({ rabbitBreeds, heading }: Props) {
 
   return (
     <>
-      <h1>{heading}</h1>
+      <h1 className="alert alert-success">{heading}</h1>
       <div style={{ display: "flex" }}>
         <div style={{ flex: 2 }}>
       
