@@ -68,10 +68,10 @@ function App() {
           </div>
         )}
         <Button
-          className="btn btn-primary"
+         
           onClick={() => setAlertVisibility(true)}
         >
-          An Overview of Rabbits
+          
         </Button>
       </div>
     </div>
