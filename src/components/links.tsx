@@ -38,12 +38,11 @@ function Links() {
             <li
               key={breed}
               className={
-                breed === selectedBreed
-                  ? "list-group-item active"
-                  : "list-group-item"
+                breed === selectedBreed ? " active" : "list-group-item"
               }
               onClick={() => setSelectedBreed(breed)}
-              style={{ color: "blue" }}
+              // onClick={() => console.log(breed)}
+              style={{ color: "blue", cursor: "pointer" }}
             >
               {breed}
             </li>
@@ -52,11 +51,17 @@ function Links() {
       </div>
       <div style={{ flex: 2 }}>
         {selectedBreed && (
-          <img
-            src={rabbitBreeds[selectedBreed]}
-            alt={selectedBreed}
-            style={{ maxWidth: "100%" }}
-          />
+          <>
+            <img
+              src={rabbitBreeds[selectedBreed]}
+              alt={selectedBreed}
+              style={{ maxWidth: "100%" }}
+              // style={{ width: ".040", height: ".040" }}
+            />
+            <p style={{ textAlign: "center", marginTop: "8px" }}>
+              {selectedBreed}
+            </p>
+          </>
         )}
       </div>
     </div>
