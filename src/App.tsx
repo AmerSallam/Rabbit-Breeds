@@ -20,6 +20,8 @@ const summerTravelDestinations = [
 
 const headingPlaces = "Recommended places to visit";
 import ListGroup from "./ListGroup.tsx";
+import Rabbit from "./button.tsx";
+import Links from "./links.tsx";
 
 function App() {
   return (
@@ -28,8 +30,14 @@ function App() {
         <ListGroup items={books} heading={headingReadingList} />
       </div>
       <div>
-      <ListGroup items={summerTravelDestinations} heading={headingPlaces} />
-        </div>
+        <ListGroup items={summerTravelDestinations} heading={headingPlaces} />
+      </div>
+      <div>
+        <Rabbit />
+      </div>
+      <div>
+        <Links />
+      </div>
     </>
   );
 }
