@@ -7,17 +7,19 @@ interface Props {
   onClose: () => void;
 }
 
-const Button = ({ children, onClick , onClose}: Props) => {
+const Button = ({ children, onClick, onClose }: Props) => {
   // return <button className={"btn btn-" + color} onClick={onClick}>{children}</button>;
   return (
-    <div className="alert alert-warning alert-dismissible" onClick={onClick}>
+    <div className="alert alert-warning alert-dismissible" onClick={onClose}>
       {children}
       <button
-        type="button"
+        // type="button"
         className=" btn btn-primary"
-        data-bs-dismiss="alert"
-        onClick={onClose}
-      >An Overview of Rabbits (click here..)</button>
+        // data-bs-dismiss="alert"
+        onClick={onClick}
+      >
+        For a breif overview of rabbits breeds <br/> (click here)
+      </button>
     </div>
   );
 };

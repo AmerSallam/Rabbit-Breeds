@@ -67,12 +67,7 @@ function App() {
             ></button>
           </div>
         )}
-        <Button
-         
-          onClick={() => setAlertVisibility(true)}
-        >
-          
-        </Button>
+        <Button onClick={() => setAlertVisibility(true)}></Button>
       </div>
     </div>
   );
