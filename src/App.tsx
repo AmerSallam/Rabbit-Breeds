@@ -1,8 +1,8 @@
 // import "bootstrap/dist/css/bootstrap.css";
 // import RabbitImageComponent from "./components/RabbitImageComponent.tsx"; // Import the component
-
+import React, { useState } from "react";
 import ListGroup from "./components/ListGroup.tsx";
-import Rabbit from "./components/button.tsx";
+import Button from "./components/button.tsx";
 // import Links from "./components/links.tsx";
 
 function App() {
@@ -47,11 +47,33 @@ function App() {
   };
 
   const headingRabbitBreeds = "Rabbit Breeds";
-
+  const [alertVisible, setAlertVisibility] = useState(false);
+  const alret =
+    "Rabbit breeds exhibit a captivating diversity, encompassing a range of sizes, colors, fur textures, and personalities. From the charming and compact Netherland Dwarf to the majestic Flemish Giant, each breed possesses unique characteristics that make them intriguing companions. The Lop Rabbit's endearing floppy ears, the luxurious coat of the Angora Rabbit, and the distinctive mane of the Lionhead Rabbit all contribute to the enchantment of these furry creatures. Whether you're drawn to the elegance of the Himalayan Rabbit or the playful nature of the American Fuzzy Lop, exploring the world of rabbit breeds reveals a tapestry of captivating traits and individuality. Whether as cherished pets, show animals, or simply admired for their beauty, rabbit breeds offer a delightful spectrum of choices for enthusiasts and animal lovers alike.";
   return (
     <div>
       <ListGroup rabbitBreeds={rabbitBreeds} heading={headingRabbitBreeds} />
-      <Rabbit />
+
+      <div>
+        {alertVisible && (
+          <div className="alert alert-warning alert-dismissible ">
+            {alret}
+
+            <button
+              type="button"
+              className="btn-close"
+              onClick={() => setAlertVisibility(false)}
+              aria-label="Close"
+            ></button>
+          </div>
+        )}
+        <Button
+          className="btn btn-primary"
+          onClick={() => setAlertVisibility(true)}
+        >
+          An Overview of Rabbits
+        </Button>
+      </div>
     </div>
   );
 }
