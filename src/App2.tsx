@@ -1,9 +1,6 @@
-// import Links from "./components/links.tsx";
 import "bootstrap/dist/css/bootstrap.css";
-
-// import RabbitImageComponent from "./components/RabbitImageComponent.tsx";
 import Links from "./components/links.tsx";
-// import imageFigurePosition from "./components/css/imageFigurePosition.css"
+import Alret from "./components/Alret.tsx";
 
 function App2() {
   const rabbitBreeds = {
@@ -33,7 +30,12 @@ function App2() {
 
   return (
     <div>
-      <Links rabbitBreeds= {rabbitBreeds}/>
+      <Alret>
+        <h1>
+          welcome to <span style={{ color: "red" }}>Rabbits World</span>{" "}
+        </h1>
+      </Alret>
+      <Links rabbitBreeds={rabbitBreeds} />
     </div>
   );
 }
