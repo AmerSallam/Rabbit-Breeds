@@ -32,10 +32,21 @@ function Links() {
 
   return (
     <div style={{ display: "flex" }}>
-      <div style={{ flex: 1 }}>
+      <div style={{ flex: 2 }}>
         <ul>
-          {Object.keys(rabbitBreeds).map((breed) => (
-            <li key={breed} onClick={() => setSelectedBreed(breed)}>
+          {Object.keys(rabbitBreeds).map((breed, index) => (
+            <li
+              // key={breed}
+
+              key={index}
+              className={
+                index === selectedBreed
+                  ? "list-group-item active"
+                  : "list-group-item"
+              }
+              onClick={() => setSelectedBreed(breed)}
+              // onClick={() => console.log(index)}
+            >
               {breed}
             </li>
           ))}

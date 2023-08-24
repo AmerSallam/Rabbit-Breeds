@@ -1,9 +1,9 @@
-import "bootstrap/dist/css/bootstrap.css";
+// import "bootstrap/dist/css/bootstrap.css";
 // import RabbitImageComponent from "./components/RabbitImageComponent.tsx"; // Import the component
 
 import ListGroup from "./components/ListGroup.tsx";
 import Rabbit from "./components/button.tsx";
-import Links from "./components/links.tsx";
+// import Links from "./components/links.tsx";
 
 function App() {
   const rabbitBreeds = [
