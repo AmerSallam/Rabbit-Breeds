@@ -34,18 +34,16 @@ function Links() {
     <div style={{ display: "flex" }}>
       <div style={{ flex: 2 }}>
         <ul>
-          {Object.keys(rabbitBreeds).map((breed, index) => (
+          {Object.keys(rabbitBreeds).map((breed) => (
             <li
-              // key={breed}
-
-              key={index}
+              key={breed}
               className={
-                index === selectedBreed
+                breed === selectedBreed
                   ? "list-group-item active"
                   : "list-group-item"
               }
               onClick={() => setSelectedBreed(breed)}
-              // onClick={() => console.log(index)}
+              style={{ color: "blue" }}
             >
               {breed}
             </li>
