@@ -1,3 +1,17 @@
+# main.tsx
+```javascript
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import App from './App.tsx'
+import 'bootstrap/dist/css/bootstrap.css'
+
+ReactDOM.createRoot(document.getElementById('root')!).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+)
+```
+
 The provided code snippet is a React application entry point that renders the main component of the application using React's `createRoot` and `ReactDOM.render` methods. It also applies the Bootstrap CSS framework for styling. Let's break down the code step by step:
 
 1. **Imports:**
@@ -80,6 +94,42 @@ In summary, the `ListGroup` component is designed to display a list of items, hi
 
 
 # App.tsx
+```javascript
+const books = [
+  "The Nightingale by Kristin Hannah",
+  "One Hundred Years of Solitude by Gabriel García Márquez",
+  "The Kite Runner by Khaled Hosseini",
+  "The Handmaid's Tale by Margaret Atwood",
+  "A Song of Ice and Fire series (starting with A Game of Thrones) by George R.R. Martin",
+];
+
+const headingReadingList = "Reading list";
+
+const summerTravelDestinations = [
+  "Santorini, Greece",
+  "Maui, Hawaii, USA",
+  "Barcelona, Spain",
+  "Bali, Indonesia",
+  "Queenstown, New Zealand",
+];
+
+const headingPlaces = "Recommended places to visit";
+import ListGroup from "./ListGroup.tsx";
+
+function App() {
+  return (
+    <>
+      <div>
+        <ListGroup items={books} heading={headingReadingList} />
+      </div>
+      <div>
+      <ListGroup items={summerTravelDestinations} heading={headingPlaces} />
+        </div>
+    </>
+  );
+}
+```
+
 The provided code snippet seems to be a React web application that displays two lists: a reading list of books and a list of recommended summer travel destinations. The application utilizes the Bootstrap CSS framework for styling and uses a custom component named `ListGroup` to render the lists.
 
 Here's a breakdown of the components and features in the code:
