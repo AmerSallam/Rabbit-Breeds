@@ -1,5 +1,5 @@
-// import "bootstrap/dist/css/bootstrap.css";
-import RabbitImageComponent from "./components/RabbitImageComponent.tsx"; // Import the component
+import "bootstrap/dist/css/bootstrap.css";
+// import RabbitImageComponent from "./components/RabbitImageComponent.tsx"; // Import the component
 
 import ListGroup from "./components/ListGroup.tsx";
 import Rabbit from "./components/button.tsx";
@@ -31,10 +31,7 @@ function App() {
       <div>
         <Rabbit />
       </div>
-      <div>
-        <Links />
-      </div>
-      
+     
     </>
   );
 }

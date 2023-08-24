@@ -1,5 +1,5 @@
-import React from "react";
-import imageFigurePosition from "../css/imageFigurePosition.css";
+// import React from "react";
+// import imageFigurePosition from "../css/imageFigurePosition.css";
 const RabbitImageComponent = ({ breedNames }) => {
   // Mapping breed names to image URLs
   const breedImages = {
@@ -29,9 +29,7 @@ const RabbitImageComponent = ({ breedNames }) => {
     // Add more breed-image mappings here
   };
 
-  //   <img src="pic_trulli.jpg" alt="Trulli" style="width:100%">
-  //   <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
-  // </figure>
+
 
   return (
     <div className="rabbit-images">
